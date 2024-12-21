@@ -39,28 +39,71 @@ header ul li a {
 
 .center {
   width: 100%;
-  max-width: 1500px;
+  padding: 100px;
   margin: 100px auto;
-  background-color: rgba(128, 128, 128, 0.315);
+  background-color: rgba(128, 128, 128, 0.185);
   height: auto;
+  
+}
+
+.container-filmes, .container-series {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ajuste conforme necessário */
+  position: relative;
+  padding: 30px;
+  
+}
+
+.container-filmes h1, .container-series h1 {
+  writing-mode: vertical-rl; /* Texto vertical de cima para baixo */
+  text-orientation: upright; /* Mantém o texto na posição correta */
+  color: white;
+  font-size: 34px; /* Ajuste conforme necessário */
+  margin: 0 -70px; /* Espaço ao redor */
+  text-align: center; /* Centraliza o texto */
+  position: absolute; /* Permite posicionamento personalizado */
+  left: 0; /* Posiciona na borda esquerda */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta para o centro */
+  
+}
+
+.container-filmes h1 {
+  background-color: rgba(255, 0, 0, 0.39);
+  height: 100%;
+  padding: 20px;
+}
+
+.container-series h1 {
+  background-color: rgba(0, 0, 255, 0.39);
+  height: 100%;
+  padding: 20px;
+}
+
+.card-film p {
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .grade-filmes,
 .grade-series {
   padding: 10px;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  
 }
+
 
 .card-film,
 .card-serie {
   width: 200px;
   height: 300px;
-
   display: block;
   position: relative;
 }
@@ -71,6 +114,11 @@ header ul li a {
   height: 100%;
   display: flex;
   justify-content: center;
+  
+}
+
+.card-film {
+  margin-top: 50px ;
 }
 
 .single-filme img {
@@ -78,6 +126,4 @@ header ul li a {
   height: 100%;
 }
 
-.grade-series {
-  margin-top: 200px;
-}
+
