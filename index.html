@@ -13,15 +13,26 @@
       <ul>
         <li><a href="#grade-filmes">Filmes</a></li>
         <li><a href="#grade-series">Séries</a></li>
-        
       </ul>
     </header>
+
+    <div class="pesquisar">
+      <div class="busca">
+        <input
+          type="search"
+          name="pesquisar"
+          id="pesquisar"
+          placeholder="Digite nome do Filme ou Série"
+        />
+        <button id="botao-pesquisar">Pesquisar</button>
+
+      </div>
+    </div>
 
     <main class="center">
       <div class="container-filmes">
         <h1>FILMES</h1>
         <div class="grade-filmes" id="grade-filmes">
-        
           <div class="card-film">
             <div class="single-filme">
               <img src="assets/img/capas-filmes/7vidas.jpg" alt="7-vidas" />
@@ -36,7 +47,7 @@
                 alt="7-vidas"
               />
             </div>
-            <p>A espera de um Milagre</p> 
+            <p>A espera de um Milagre</p>
           </div>
           <!-- card-filmes -->
           <div class="card-film">
@@ -58,7 +69,10 @@
           <!-- card-filmes -->
           <div class="card-film">
             <div class="single-filme">
-              <img src="assets/img/capas-filmes/mercenarios.jpg" alt="7-vidas" />
+              <img
+                src="assets/img/capas-filmes/mercenarios.jpg"
+                alt="7-vidas"
+              />
             </div>
             <p>Mercenários</p>
           </div>
@@ -131,13 +145,12 @@
       <div class="container-series">
         <h1>SERIES</h1>
         <div class="grade-series" id="grade-series">
-        
           <div class="card-serie">
             <div class="single-serie">
               <img
                 src="assets/img/capas-filmes/sobrenatural-9a-temporada_t74239.webp"
                 alt=""
-              /> 
+              />
             </div>
             <p>Sobrenatural</p>
           </div>
@@ -214,5 +227,7 @@
         <!--grade-series -->
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

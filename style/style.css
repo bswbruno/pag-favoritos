@@ -40,10 +40,60 @@ header ul li a {
   font-size: 24px;
 }
 
+.busca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto; 
+  gap: 20px; 
+}
+
+.busca input[type="search"] {
+  width: 300px;
+  height: 40px; 
+  padding: 5px 15px; 
+  font-size: 16px; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  outline: none; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.busca input[type="search"]:focus {
+  border-color: #ff0000; 
+  box-shadow: 0 0 8px rgba(192, 125, 105, 0.5); 
+}
+
+.busca #botao-pesquisar {
+  background-color: #ff0000; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.busca input[type="submit"]:hover {
+  background-color: #b300006e; 
+}
+
+.busca input[type="submit"]:active {
+  background-color: #9c4c4c;
+}
+
+
+
+
+
+
+
+
 .center {
   width: 100%;
-  padding: 100px;
-  margin: 100px auto;
+  padding: 0 100px;
+  margin: 0 auto;
   
   height: auto;
   
@@ -52,23 +102,24 @@ header ul li a {
 .container-filmes, .container-series {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Ajuste conforme necessário */
+  justify-content: flex-start; 
   position: relative;
   padding: 30px;
+  
   
 }
 
 .container-filmes h1, .container-series h1 {
-  writing-mode: vertical-rl; /* Texto vertical de cima para baixo */
-  text-orientation: upright; /* Mantém o texto na posição correta */
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
   color: white;
-  font-size: 34px; /* Ajuste conforme necessário */
-  margin: 0 -70px; /* Espaço ao redor */
-  text-align: center; /* Centraliza o texto */
-  position: absolute; /* Permite posicionamento personalizado */
-  left: 0; /* Posiciona na borda esquerda */
-  top: 50%; /* Centraliza verticalmente */
-  transform: translateY(-50%); /* Ajusta para o centro */
+  font-size: 34px; 
+  margin: 0 -70px; 
+  text-align: center; 
+  position: absolute; 
+  left: 0; 
+  top: 50%;
+  transform: translateY(-50%); 
   
   
 }
@@ -77,12 +128,14 @@ header ul li a {
   background-color: rgba(255, 0, 0, 0.39);
   height: 100%;
   padding: 20px;
+  
 }
 
 .container-series h1 {
   background-color: rgba(0, 0, 255, 0.39);
   height: 100%;
   padding: 20px;
+  
 }
 
 .card-film p {
@@ -105,6 +158,7 @@ header ul li a {
 .grade-series {
   padding: 10px;
   display: flex;
+  
   gap: 50px;
   justify-content: center;
   align-items: center;
@@ -139,5 +193,3 @@ header ul li a {
   width: 100%;
   height: 100%;
 }
-
-
